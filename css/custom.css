@@ -222,8 +222,9 @@ header img{
   }
   .card-img-top{
     height: 34vw;
-    width: 34vw;
+    width: 34vw;'
 }
+/*
 #naman , #dewansh , #raaj{
   position: relative;
   animation : one 1s ease-in ;
@@ -260,6 +261,7 @@ header img{
     top:0px;
   }
 }
+*/
 .overlayleft{
   position: absolute;
   height: 34vw;
