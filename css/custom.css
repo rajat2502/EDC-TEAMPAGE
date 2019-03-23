@@ -1,0 +1,315 @@
+/********** common setting **********/
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+#events a{
+    margin-right: 30px;
+}
+iframe{
+    height: 125px;
+}
+.btn-collab{
+    width: 100%;
+}
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 120px;
+}
+.fa-arrow-down{
+    position: relative;
+    animation-name: down;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+/********** feature (skew background) **********/
+.mx-auto{
+    max-width: 180px!important;
+    margin-bottom: 10px;
+}
+.display-4{
+    font-size: 2rem!important;
+}
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+.premium:hover {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+@keyframes down{
+    0%,100%{
+        bottom: -3px;
+    }
+    50%{
+        bottom: 3px;
+    }
+}
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+.event-card{
+    min-height: 425px!important;
+}
+}
+
+header img{
+    min-width: 100px;
+}
+.jumbotron{
+    background: #192440;
+}
+.teammembers{
+  text-align: center;
+  padding-top: 5%;
+}
+.card-img-top{
+  width:50%;
+}
+#Coordinators , #Cooperates , #Editorial{
+  width: 60%;
+  position: relative;
+  left: 20%;
+  padding: 2% 0;
+}
+#Operations , #Technical , #Events{
+  width:90%;
+  position: relative;
+  left: 5%;
+  padding: 2% 0;
+}
+.footer{
+  margin-top: 5%;
+  }
+  .card-img-top{
+    height: 34vw;
+    width: 34vw;
+}
+#naman , #dewansh , #raaj{
+  position: relative;
+  animation : one 1s ease-in ;
+}
+#atul , #divyansh , #adesh{
+  position: relative;
+  animation : two 1s ease-in ;
+}
+#shivani , #waris , #prakhar , #nishith , #shlok , #ayushi , #siddhartha , #ritika , #vedansh{
+  position: relative;
+  animation : three .3s ease-in ;
+}
+@keyframes one{
+  from{
+    left:-800px;
+  }
+  to{
+    left:0px;
+  }
+}
+@keyframes two{
+  from{
+    right:-800px;
+  }
+  to{
+    right:0px;
+  }
+}
+@keyframes three{
+  from{
+    top:60px;
+  }
+  to{
+    top:0px;
+  }
+}
+.overlayleft{
+  position: absolute;
+  height: 34vw;
+  background-color: #192440;
+  color: white;
+  opacity: .7;
+  right: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.overlayright{
+  position: absolute;
+  height: 34vw;
+  background-color: #192440;
+  color: white;
+  opacity: .7;
+  left: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.overlaybottom{
+  position: absolute;
+  height: 0;
+  background-color: #192440;
+  color: white;
+  opacity: .7;
+  top: 100%;
+  width: 28.3vw;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   white-space: nowrap;
+   z-index: 1;
+}
+#naman:hover .overlayleft , #dewansh:hover .overlayleft ,  #raaj:hover .overlayleft{
+  right: 0;
+  width: 28.6vw;
+}
+#atul:hover .overlayright , #divyansh:hover .overlayright , #adesh:hover .overlayright{
+  left: 0;
+  width: 28.6vw;
+}
+#shivani:hover .overlaybottom , #prakhar:hover .overlaybottom , #waris:hover .overlaybottom , #nishith:hover .overlaybottom , #shlok:hover .overlaybottom , #ayushi:hover .overlaybottom , #siddhartha:hover .overlaybottom , #ritika:hover .overlaybottom , #vedansh:hover .overlaybottom{
+  top: 0;
+  height: 34vw;
+}
