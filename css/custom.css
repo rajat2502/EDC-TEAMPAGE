@@ -1,6 +1,11 @@
 /********** common setting **********/
-h2 {
+h2{
     font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem !important;
     font-weight: 700;
 }
 
@@ -220,48 +225,10 @@ header img{
 .footer{
   margin-top: 5%;
   }
-  .card-img-top{
+.card-img-top{
     height: 34vw;
-    width: 34vw;'
+    width: 34vw;
 }
-/*
-#naman , #dewansh , #raaj{
-  position: relative;
-  animation : one 1s ease-in ;
-}
-#atul , #divyansh , #adesh{
-  position: relative;
-  animation : two 1s ease-in ;
-}
-#shivani , #waris , #prakhar , #nishith , #shlok , #ayushi , #siddhartha , #ritika , #vedansh{
-  position: relative;
-  animation : three .3s ease-in ;
-}
-@keyframes one{
-  from{
-    left:-800px;
-  }
-  to{
-    left:0px;
-  }
-}
-@keyframes two{
-  from{
-    right:-800px;
-  }
-  to{
-    right:0px;
-  }
-}
-@keyframes three{
-  from{
-    top:60px;
-  }
-  to{
-    top:0px;
-  }
-}
-*/
 .overlayleft{
   position: absolute;
   height: 34vw;
@@ -291,25 +258,33 @@ header img{
   color: white;
   opacity: .7;
   top: 100%;
-  width: 28.3vw;
+  width: 100%;
   overflow: hidden;
   transition: 0.5s ease;
 }
 .content{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   white-space: nowrap;
-   z-index: 1;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+}
+.content>h1{
+  font-size: 2rem;
+  padding-bottom: 3%;
 }
 #naman:hover .overlayleft , #dewansh:hover .overlayleft ,  #raaj:hover .overlayleft{
   right: 0;
-  width: 28.6vw;
+  width: 100%;
 }
 #atul:hover .overlayright , #divyansh:hover .overlayright , #adesh:hover .overlayright{
   left: 0;
-  width: 28.6vw;
+  width: 100%;
 }
 #shivani:hover .overlaybottom , #prakhar:hover .overlaybottom , #waris:hover .overlaybottom , #nishith:hover .overlaybottom , #shlok:hover .overlaybottom , #ayushi:hover .overlaybottom , #siddhartha:hover .overlaybottom , #ritika:hover .overlaybottom , #vedansh:hover .overlaybottom{
   top: 0;
