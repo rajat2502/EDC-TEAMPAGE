@@ -13,12 +13,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+  $(document).ready(function(){
+    $('a').on('click', function(event) {
+        var hash = this.hash;
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 900);
+    });
+})
+</script>
   </head>
   <body id="top">
     <nav>
       <div class="jumbotron jumbotron-fluid" style="background-color:#192440;">
-          <div class="container text-center text-md-left">
+          <div class="container text-center text-md-left"  id="teamnav">
               <header>
                   <div class="row justify-content-between">
                       <div class="col-2">
@@ -35,7 +43,7 @@
 
   <section class="teammembers">
     <div class="teamedc">
-      <h1>TEAM EDC</h1>
+      <h2 class="text-center font-weight-bold my-5">TEAM EDC</h2>
     </div>
 
     <br>
@@ -44,22 +52,23 @@
         <h3>Overall Coordinators</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0"  id="naman" data-aos="fade-right">
+          <div class="card border-0"  id="naman" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\naman.jpg" class="card-img-top" alt="...">
             <div class="overlayleft">
               <div class="content">
                 <h1>NAMAN JAIN</h1>
-                <p>naman.edcjss@gmail.com</p>
+                <p>naman@edcjss.in</p>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="card border-0"  id="atul" data-aos="fade-left">
+          <div class="card border-0"  id="atul" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\atul.jpg" class="card-img-top" alt="...">
             <div class="overlayright">
               <div class="content">
                 <h1>ATUL RAJ</h1>
-                <p>atul.edcjss@gmail.com</p>
+                <p>atul@edcjss.in</p>
               </div>
           </div>
         </div>
@@ -72,32 +81,32 @@
         <h3>Operations</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0" id="shivani" data-aos="fade-right">
+          <div class="card border-0" id="shivani" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\shivani.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>SHIVANI TEKRIWAL</h1>
-                <p>shivani.edcjss@gmail.com</p>
+                <p>shivani@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0"  id="waris" data-aos="zoom-in">
-            <img src="img\team\naman.jpg" class="card-img-top" alt="...">
+          <div class="card border-0"  id="waris" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+            <img src="img\team\waris.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>MOHAMMAD WARIS</h1>
-                <p>waris.edcjss@gmail.com</p>
+                <p>waris@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0"  id="prakhar"  data-aos="fade-left">
+          <div class="card border-0"  id="prakhar"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\prakhar.jpeg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>PRAKHAR BHARDWAJ</h1>
-                <p>prakhar.edcjss@gmail.com</p>
+                <p>prakhar@edcjss.in</p>
               </div>
             </div>
           </div>
@@ -109,32 +118,32 @@
         <h3>Technical</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0" id="nishith" data-aos="flip-right">
+          <div class="card border-0" id="nishith" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\nishith.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>NISHITH JAISWAL</h1>
-                <p>nishith.edcjss@gmail.com</p>
+                <p>nishith@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0" id="shlok" data-aos="zoom-in">
-            <img src="img\team\naman.jpg" class="card-img-top" alt="...">
+          <div class="card border-0" id="shlok" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+            <img src="img\team\shlok.JPG" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>SHLOK SRIVATAVA</h1>
-                <p>shlok.edcjss@gmail.com</p>
+                <p>shlok@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0" id="ayushi" data-aos="flip-left">
+          <div class="card border-0" id="ayushi" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\ayushik.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>AYUSHI KAPOOR</h1>
-                <p>ayushi.edcjss@gmail.com</p>
+                <p>ayushi@edcjss.in</p>
               </div>
             </div>
           </div>
@@ -146,32 +155,32 @@
         <h3>Events</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0"  id="siddhartha" data-aos="zoom-in">
+          <div class="card border-0"  id="siddhartha" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\siddhartha.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>SIDDHARTHA RATMELE</h1>
-                <p>siddhartha.edcjss@gmail.com</p>
+                <p>siddhartha@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0" id="ritika" data-aos="zoom-in">
+          <div class="card border-0" id="ritika" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\ritika.jpg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>RITIKA MAKAR</h1>
-                <p>ritika.edcjss@gmail.com</p>
+                <p>ritika@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0" id="vedansh" data-aos="zoom-in">
+          <div class="card border-0" id="vedansh" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\vedansh.jpeg" class="card-img-top" alt="...">
             <div class="overlaybottom">
               <div class="content">
                 <h1>VEDANSH KEDIA</h1>
-                <p>vedansh.edcjss@gmail.com</p>
+                <p>vedansh@edcjss.in</p>
               </div>
             </div>
           </div>
@@ -183,22 +192,22 @@
         <h3>Cooperates</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0"  id="dewansh" data-aos="fade-right">
+          <div class="card border-0"  id="dewansh" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\dewansh.jpg" class="card-img-top" alt="...">
             <div class="overlayleft">
               <div class="content">
                 <h1>DEWANSH</h1>
-                <p>dewansh.edcjss@gmail.com</p>
+                <p>dewansh@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0"  id="divyansh" data-aos="fade-left">
+          <div class="card border-0"  id="divyansh" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\divyansh.jpg" class="card-img-top" alt="...">
             <div class="overlayright">
               <div class="content">
                 <h1>DIVYANSH GANDHI</h1>
-                <p>divyansh.edcjss@gmail.com</p>
+                <p>divyansh@edcjss.in</p>
               </div>
           </div>
         </div>
@@ -209,22 +218,22 @@
         <h3>Editorial</h3>
         <br>
         <div class="card-deck">
-          <div class="card border-0"  id="raaj" data-aos="fade-right">
-            <img src="img\team\dewansh.jpg" class="card-img-top" alt="...">
+          <div class="card border-0"  id="raaj" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+            <img src="img\team\raaj.jpg" class="card-img-top" alt="...">
             <div class="overlayleft">
               <div class="content">
                 <h1>RAAJ</h1>
-                <p>raaj.edcjss@gmail.com</p>
+                <p>raaj@edcjss.in</p>
               </div>
             </div>
           </div>
 
-          <div class="card border-0"  id="adesh" data-aos="fade-left">
+          <div class="card border-0"  id="adesh" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
             <img src="img\team\adesh (1).jpg" class="card-img-top" alt="...">
             <div class="overlayright">
               <div class="content">
                 <h1>ADESH</h1>
-                <p>adesh.edcjss@gmail.com</p>
+                <p>adesh@edcjss.in</p>
               </div>
           </div>
         </div>
@@ -262,3 +271,8 @@
   </section>
   </body>
 </html>
+
+
+<!--            <div class="card-body">
+              <h5 class="card-title">Naman</h5>
+            </div> -->
